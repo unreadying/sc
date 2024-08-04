@@ -1,0 +1,157 @@
+body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.topbar table{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.topbar td{
+    padding-left:5vw;
+    padding-right:5vw;
+}
+
+.topbar td:hover{
+    color:black;
+    cursor:pointer;
+}
+
+.topbar{
+    font-weight: 500;
+    position:fixed;
+    top:0;
+    left:0;
+    /* background-color: white; */
+    color:#0046d0;
+    font-size: 3vh;
+    width:100%;
+    border-top:2vh;
+    border-bottom:2vh;
+    border-style:solid;
+    border-color:transparent;
+    text-align: center;
+}
+
+.mobmenu{
+    display:none;
+}
+
+.logom{
+    max-height: 6vh;
+}
+
+.logod{
+    max-height:6vh;
+}
+
+.logod:hover{
+    filter:invert(1);
+}
+
+.homecars{
+    margin-top:0vh;
+}
+
+.homecars p{
+    color:#0046d0;
+    margin-left:10vw;
+    margin-right:10vw;}
+
+.homecars img{
+    object-fit: cover;
+    width:100vw;
+    max-width:100%;
+}
+
+/* mobile */
+
+@media screen and (max-aspect-ratio:1/1){
+    .topbar{
+        display:none;
+    }
+    
+
+    .homecars{
+        margin-top:11vh;
+    }
+    
+    .homecars img{
+        object-fit: cover;
+        width:100vw;
+        max-width:100%;
+        height:auto;
+        margin-bottom:2vh;
+    }
+
+    .mobmenu{
+        position:fixed;
+        width:100vw;
+        top:0;
+        left:0;
+        display:block;
+        color:#0046d0;
+        text-align: right;
+    }
+
+    #min{
+        position:absolute;
+        /* background-color: white; */
+        height: 24vw;
+        width:100vw;
+        left:0;
+        top:0;
+    }
+
+    #max{
+        margin-top:4vw;
+        margin-right:6vw;
+    }
+
+    .logom{
+        position:absolute;
+        left:5vw;
+        top:5vw;
+        cursor:pointer;
+    }
+
+    .menubtn{
+        position: absolute;
+        right:5vw;
+        top:7vw;
+        max-height: 4vh;
+        cursor:pointer;
+    }
+    
+    .mobmenu p{
+        position:absolute;
+        right:5vw;
+        font-size: 18vw;
+        margin:0;
+        cursor:pointer;
+    }
+
+    .mobmenu p:hover{
+        color:black;
+    }
+
+    .mobmenu table{
+        margin-left:auto;
+        font-size:12vw;
+        margin-right:2vw;
+    }
+
+    .mobmenu td{
+        padding-bottom:5vh; 
+    }
+
+    .mobmenu td:hover{
+        color:black;
+        cursor:pointer;
+    }
+
+    #max{
+        display:none;
+    }
+}
