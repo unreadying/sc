@@ -264,6 +264,10 @@ a{
         text-align: right;
     }
 
+    .carv{
+        max-width:75vw;
+    }
+
     #min{
         position:absolute;
         /* background-color: white; */
