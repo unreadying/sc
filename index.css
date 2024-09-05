@@ -144,11 +144,18 @@ a{
     margin-right:10vw;}
 
 .homecars img{
-    margin-bottom:-1vh;
-    object-fit: cover;
-    width:100vw;
-    height:105vh;
-    max-width:100%;
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.homecarsdiv{
+    overflow: hidden;
+    height: 105vh;
+    max-height: 105vmax;
+    position: relative;
 }
 
 .carsmedia{
@@ -252,7 +259,16 @@ a{
         width:100vw;
         max-width:100%;
         height:auto;
-        
+        display: inline;
+        width: 100%;
+        position:static;
+        bottom: 0;
+    }
+
+    .homecarsdiv{
+        overflow: hidden;
+        height:auto;
+        margin-top: -1vh;
     }
 
     .mobmenu{
