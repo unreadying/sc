@@ -437,6 +437,7 @@ img[src=""]{
 
 .galimg{
     max-height: 40vh;
+    max-width: 90vw;
 }
 
 }
