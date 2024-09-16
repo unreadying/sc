@@ -423,14 +423,14 @@ img[src=""]{
     
 .prev{
     font-size: 0vmax;
-    padding-right: 7vw;
+    padding-right: 5vw;
     padding-left:0vw;
     cursor:pointer;
 }
 
 .next{
     font-size: 0vmax;
-    padding-left: 7vw;
+    padding-left: 5vw;
     padding-right:0vw;
     cursor:pointer;
 }
