@@ -10,12 +10,34 @@ var car = 1;
 var changes = 0;
 var maxchanges = 0;
 var pcar = 0;
+var gal=false;
+
 
 menubutton.onclick=menutog;
 x.onclick=menutog;
 
 
 document.addEventListener("keydown",navigate)
+document.addEventListener("mouseover",hover)
+
+function hover(){
+    var ccar = Number(event.target.name);
+    for(i=0;i<totalcars;i++){
+        document.getElementsByName(""+(i+1)+"")[0].src="fleet/"+(i+1)+".jpg";
+        document.getElementsByName(""+(i+1)+"")[1].src="fleet/"+(i+1)+".jpg";
+    }
+    if(ccar<=totalcars && ccar>0){
+        if(window.innerHeight<window.innerWidth){
+        document.getElementsByName(""+(ccar)+"")[0].src="fleet/"+(ccar+(1)/10)+".jpg";
+        }else{
+            document.getElementsByName(""+(ccar)+"")[1].src="fleet/"+(ccar+(1)/10)+".jpg";
+        }
+    }
+}
+
+function rand(n){
+    return Math.floor(Math.random()*n);
+}
 
 function navigate(){
     if(event.key=="ArrowLeft"){
@@ -26,6 +48,26 @@ function navigate(){
     }
     if(event.key=="Escape"){
         closegal();
+    }
+    if(event.key=="ArrowDown"){
+        
+        if(gal==true){
+            car+=1;
+        }
+        if(car>totalcars){
+            car=1;
+        }
+        opengal();
+    }
+    if(event.key=="ArrowUp"){
+        
+        if(gal==true){
+            car-=1;
+        }
+        if(car<1){
+            car=totalcars;
+        }
+        opengal();
     }
 }
 
@@ -123,8 +165,11 @@ function previmg(){
 document.getElementById("screen").onclick=closegal;
 
 function opengal(){
+    gal=true;
     changes=0;
+    if(typeof(event.target.name)=="string"){
     car = event.target.name;
+    }
 
 
 
@@ -159,6 +204,7 @@ function opengal(){
 }
 
 function closegal(){
+    gal=false;
     document.getElementById("gallery").style.display="none";
     document.getElementById("screen").style.display="none";
     console.log("close");

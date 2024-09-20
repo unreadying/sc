@@ -5,6 +5,8 @@ body{
     background-color: #090025;
 }
 
+
+
 a{
     color:white;
 }
@@ -92,8 +94,9 @@ img[src=""]{
 }
 
 .infocars p{
-    margin-left:15vw;
-    margin-right:15vw;
+    
+    margin-right:8vw;
+    margin-left:8vw;
 }
 
 .title{
@@ -103,7 +106,9 @@ img[src=""]{
 }
 
 .thumb{
-    max-width:25vw;
+    max-width:40vw;
+    margin-left:.5vh;
+    margin-right:.5vh;
 }
 
 .car{
@@ -120,12 +125,14 @@ img[src=""]{
 
 
 .floor{
+    
+    
     font-weight: 500;
-    margin-left:14vw;
+    margin-inline:auto;
     /* background-color: white; */
     color:#ffffff;
     font-size: 3vh;
-    width:70vw;
+    width:80vw;
     border-top:4vh;
     border-bottom:2vh;
     border-style:solid;
@@ -157,8 +164,7 @@ img[src=""]{
 
 .homecarsdiv{
     overflow: hidden;
-    height: 105vh;
-    max-height: 105vmax;
+    height:50vw;
     position: relative;
 }
 
@@ -243,6 +249,20 @@ img[src=""]{
     cursor:zoom-out;   
 }
 
+.footer{
+    text-align: center;
+    max-width: 80vw;
+    margin-inline: auto;
+}
+
+.carlabel{
+    font-weight: 100;
+    text-align: left;
+    margin-top:-2vw;
+    margin-left:5vw;
+    margin-bottom:4vw;
+}
+
 
 
 /* mobile */
@@ -256,8 +276,9 @@ img[src=""]{
     }
 
     .thumb{
-        max-width:75vw;
-        margin-bottom:10vh;
+        max-width:90vw;
+        margin-bottom:-4vh;
+        padding-bottom:5vh;
     }
 
     .mobfloor{
@@ -302,11 +323,12 @@ img[src=""]{
 
     .infocars{
         margin-top:15vh;
-        margin-left:0vmin;
-        margin-right:0vmin;
+        margin-inline:auto;
         font-size:4vmin;    
         text-align: center;
     }
+
+
 
     .topbar{
         display:none;
