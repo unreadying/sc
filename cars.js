@@ -20,7 +20,7 @@ x.onclick=menutog;
 document.addEventListener("keydown",navigate)
 document.addEventListener("mouseover",hover)
 
-function hover(){
+function hover(event){
     var ccar = Number(event.target.name);
     for(i=0;i<totalcars;i++){
         document.getElementsByName(""+(i+1)+"")[0].src="fleet/"+(i+1)+".jpg";
@@ -39,7 +39,7 @@ function rand(n){
     return Math.floor(Math.random()*n);
 }
 
-function navigate(){
+function navigate(event){
     if(event.key=="ArrowLeft"){
         previmg();
     }
@@ -71,7 +71,7 @@ function navigate(){
     }
 }
 
-function imgsel(){
+function imgsel(event){
         var selectedimg=event.target.id
 
         selectedimg = Number(selectedimg.replace(/\D/g, ""));
@@ -100,7 +100,7 @@ function menutog(){
     }
 }
 
-function hide(){
+function hide(event){
     var img=document.getElementById(event.target.id);
 
     img.style.display="none";
@@ -164,7 +164,7 @@ function previmg(){
 
 document.getElementById("screen").onclick=closegal;
 
-function opengal(){
+function opengal(event){
     gal=true;
     changes=0;
     if(typeof(event.target.name)=="string"){
