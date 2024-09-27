@@ -251,6 +251,15 @@ img[src=""]{
     cursor:zoom-out;   
 }
 
+.logos{
+    text-align:center;
+    width:100%;
+}
+
+.workgal{
+    margin:5vmin;
+}
+
 .footer{
     text-align: center;
     max-width: 80vw;
@@ -305,7 +314,7 @@ img[src=""]{
     }
 
     .info{
-        margin-top:25vh;
+        margin-top:20vh;
         margin-left:3vmin;
         margin-right:3vmin;
         font-size:4vmin;
