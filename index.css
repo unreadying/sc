@@ -203,7 +203,7 @@ img[src=""]{
     margin-left:15vw;
     margin-inline:auto;
     max-width:70vw;
-    width: fit-content;
+    max-width: fit-content;
     height: fit-content;
     transform:translate(0,-50%);
 }
