@@ -1,28 +1,87 @@
 <!DOCTYPE html>
     <head>
         <link rel="stylesheet" type="text/css" href="index.css">
-        <title>Cars - Sasha's Cars</title>
-        <meta name="description" content="Renting out a curated collection of vintage cars. Book cars for productions and events.">
+        <title>Work - Sasha's Cars</title>
+        <meta name="description" content="Since 2019, we have been working alongside our clients to bring their vision to life">
         <meta name="og:title" property="og:title" content="Sasha's Cars - Toronto Picture Car Rental">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
     </head>
 
     <body>
         <div class="topbar">
             <table>
-                
-                <td><a href="cars.html"><img class="logod" src="carsw.png"></a></td>
-                <td><a href="about.html"><img class="logod" src="about.png"></a></td>
-                <td><a href="index.html"><img class="logod" src="lpp.png"></a></td>
-                <td><a href="work.html"><img class="logod" src="workw.png"></a></td>
-                <td><a href="contact.html"><img class="logod" src="contactw.png"></a></td>
-            
+                <nav>
+                <td><a href="cars.html"><img class="logod" alt="link to cars page" src="carsw.png"></a></td>
+                <td><a href="about.html"><img class="logod" alt="link to about page" src="about.png"></a></td>
+                <td><a href="index.html"><img class="logod" alt="logo / link to front page" src="lpp.png"></a></td>
+                <td><a href="https://www.instagram.com/sashas.cars/" target="_blank" rel="noopener noreferrer"><img class="logod" src="workw.png"></a></td>
+                <td><a href="contact.html"><img class="logod" alth = "link to contact page" src="contactw.png"></a></td>
+                </nav>
             </table>
+            <!-- <hr style="width:80vw;height:1px;color:white;background-color: white;"> -->
         </div>
 
-        
+                <!-- mobile -->
 
-        <div class="info">
+                <div class="mobmenu">
             
+                    <span id="min">
+                    <p id="menubutton"><img class="menubtn" src="menuw.png"></p>
+                    </span>
+                    <span id="max">
+                        <table>
+                            <tr>
+                                <td id="x"><img class="logox" src="ex.png"></td>
+                            </tr>
+                            <tr>
+                                <td><a href="cars.html"><img class="logod" src="carsw.png"></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="about.html"><img class="logod" src="about.png"></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.instagram.com/sashas.cars/" target="_blank" rel="noopener noreferrer"><img class="logod" src="workw.png"></a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="contact.html"><img class="logod" src="contactw.png"></a></td>
+                            </tr>
+                
+                        </table>
+                    </span>
+                    <a href="index.html"><img class="logom" src="lpp.png"></a>
+                </div>  
+                <div id="content">
+        <div class="floor" style="margin-top:15vh;">
+        
+            <img id="1" class="logod" src="dl.jpg" onclick="newwork(event)" title="ontario licence plate">
+            <img id="2" class="logod" src="dl.jpg" onclick="newwork(event)" title="ontario licence plate">
+            <img id="3" class="logod" src="dl.jpg" onclick="newwork(event)" title="ontario licence plate">
+            <img id="4" class="logod" src="dl.jpg" onclick="newwork(event)" title="ontario licence plate">
+            <img id="5" class="logod" src="dl.jpg" onclick="newwork(event)" title="ontario licence plate">
+            <img id="6" class="logod" src="dl.jpg" onclick="newwork(event)" title="ontario licence plate">
+
+            <div class="workgal" style="font-size:2vmin;">
+                <p id="workp">Since 2019 we've been providing vintage cars to shoots all around the GTA. <br>
+                Select a logo to view some of the work we've been a part of.</p>
+                <img class="car" id="worki1" onerror="hide(event)"><br>
+                <img class="car" id="worki2" onerror="hide(event)"><br>
+                <img class="car" id="worki3" onerror="hide(event)"><br>
+                <img class="car" id="worki4" onerror="hide(event)"><br>
+                <img class="car" id="worki5" onerror="hide(event)"><br>
+                <img class="car" id="worki6" onerror="hide(event)"><br>
+            </div>
         </div>
+
+        <div class="mobfloor" style="margin-top:15vh;">
+
+            <p class="carlabel"><img id="1" class="logod" src="dl.jpg" onclick="newwork(event)" title="ontario licence plate"><br>ontario licence plate</p>
+            <img class="car" id="worki1" src="work/1.jpg"><br>
+           
+            </div>
+        </div>
+
+        </div>
+</div>
+        <script src="work.js"></script>
     </body>
