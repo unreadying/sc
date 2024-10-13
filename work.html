@@ -10,15 +10,17 @@
 
     <body>
         <div class="topbar">
+		<nav>
             <table>
-                <nav>
+                
                 <td><a href="cars.html"><img class="logod" alt="link to cars page" src="carsw.png"></a></td>
                 <td><a href="about.html"><img class="logod" alt="link to about page" src="about.png"></a></td>
                 <td><a href="index.html"><img class="logod" alt="logo / link to front page" src="lpp.png"></a></td>
-                <td><a href="https://www.instagram.com/sashas.cars/" target="_blank" rel="noopener noreferrer"><img class="logod" src="workw.png"></a></td>
-                <td><a href="contact.html"><img class="logod" alth = "link to contact page" src="contactw.png"></a></td>
-                </nav>
+                <td><a href="https://www.instagram.com/sashas.cars/" alt = "link to work page" target="_blank" rel="noopener noreferrer"><img class="logod" src="workw.png"></a></td>
+                <td><a href="contact.html"><img class="logod" alt = "link to contact page" src="contactw.png"></a></td>
+                
             </table>
+			</nav>
             <!-- <hr style="width:80vw;height:1px;color:white;background-color: white;"> -->
         </div>
 
@@ -52,33 +54,48 @@
                     <a href="index.html"><img class="logom" src="lpp.png"></a>
                 </div>  
                 <div id="content">
-        <div class="floor" style="margin-top:15vh;">
-        
-            <img id="1" class="logod" src="dl.jpg" onclick="newwork(event)" title="ontario licence plate">
-            <img id="2" class="logod" src="dl.jpg" onclick="newwork(event)" title="ontario licence plate">
-            <img id="3" class="logod" src="dl.jpg" onclick="newwork(event)" title="ontario licence plate">
-            <img id="4" class="logod" src="dl.jpg" onclick="newwork(event)" title="ontario licence plate">
-            <img id="5" class="logod" src="dl.jpg" onclick="newwork(event)" title="ontario licence plate">
-            <img id="6" class="logod" src="dl.jpg" onclick="newwork(event)" title="ontario licence plate">
+        <div class="allfloor">
+ 
+			<img class="limgbtn" onmousedown="prod()" onmouseup="prod()" src="work/production.jpg">
+			<span class="limgbtnp"><p class="imgbtnp">Productions</p></span>
+			<img class="rimgbtn" onmousedown="oc()" onmouseup="oc()" src="work/wedding.jpg">
+			<span class="rimgbtnp"><p class="imgbtnp">Occasions</p></span>
+			<div id="ocbody">
+			<img class="brandworkgal" src="work/2.jpg">
+			<span id="ocscrollpoint"></span>
+			</div>
+			<div id="prodbody">
+			<img class="brandworkgal" src="work/2.jpg">
+			<span id="prodscrollpoint"></span>
+			</div>
+			
+			       <span class="brands">
+            <img id="1" class="blogo" src="work/1.png" onmousedown="newwork(event)" onmouseup="scrollto()" title="Roots">
+            <img id="2" class="blogo" src="work/2.png" onmousedown="newwork(event)" onmouseup="scrollto()" title="British Vogue">
+            <img id="3" class="blogo" src="work/3.png" onmousedown="newwork(event)" onmouseup="scrollto()" title="Canon">
+            <img id="4" class="blogo" src="work/4.png" onmousedown="newwork(event)" onmouseup="scrollto()" title="Universal Music">
+            <img id="5" class="blogo" src="work/5.png" onmousedown="newwork(event)" onmouseup="scrollto()" title="OVO">
+			<img id="6" class="blogo" src="work/6.png" onmousedown="newwork(event)" onmouseup="scrollto()" title="Sony Music">
+		</span>
 
-            <div class="workgal" style="font-size:2vmin;">
-                <p id="workp">Since 2019 we've been providing vintage cars to shoots all around the GTA. <br>
-                Select a logo to view some of the work we've been a part of.</p>
-                <img class="car" id="worki1" onerror="hide(event)"><br>
-                <img class="car" id="worki2" onerror="hide(event)"><br>
-                <img class="car" id="worki3" onerror="hide(event)"><br>
-                <img class="car" id="worki4" onerror="hide(event)"><br>
-                <img class="car" id="worki5" onerror="hide(event)"><br>
-                <img class="car" id="worki6" onerror="hide(event)"><br>
+            <div class="workgal" style="font-size:3vmin;">
+				<p id="workp"></p>
+                <div id="brandwork"><iframe src="https://www.youtube-nocookie.com/embed/z-DK_8xtV_c?si=GG-olPA0XnI0Huh6&amp;start=51" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <img class="brandworkgal" id="worki1" onerror="hide(event)"><br>
+				<span id="scrollpoint"></span>
+                <img class="car" id="worki2" onerror="hide(event)">
+                <img class="car" id="worki3" onerror="hide(event)">
+                <img class="car" id="worki4" onerror="hide(event)">
+                <img class="car" id="worki5" onerror="hide(event)">
+                <img class="car" id="worki6" onerror="hide(event)">
             </div>
+			
         </div>
+		
+		
 
-        <div class="mobfloor" style="margin-top:15vh;">
 
-            <p class="carlabel"><img id="1" class="logod" src="dl.jpg" onclick="newwork(event)" title="ontario licence plate"><br>ontario licence plate</p>
-            <img class="car" id="worki1" src="work/1.jpg"><br>
-           
-            </div>
+
         </div>
 
         </div>

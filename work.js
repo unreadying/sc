@@ -34,7 +34,23 @@ function hide(event){
     img.style.display="none";
 }
 
+function prod(){
+	document.getElementById("prodbody").style.display="block";
+	document.getElementById("ocbody").style.display="none";
+	
+	document.getElementById("prodscrollpoint").scrollIntoView();
+}
+
+function oc(){
+	document.getElementById("ocbody").style.display="block";
+	document.getElementById("prodbody").style.display="none";
+	
+	document.getElementById("ocscrollpoint").scrollIntoView();
+}
+
 function newwork(event){
+	
+	
  
     if(typeof(event.target.id)=="string"){
     workn = event.target.id;
@@ -46,9 +62,16 @@ function newwork(event){
     pworkn = workn;
 
     console.log(workn);
+	
+	if(event.target.title=="OVO"){
+		document.getElementById("brandwork").style.display="block"
+	}else{
+	document.getElementById("brandwork").style.display="none"
 
-    document.getElementById("workp").innerHTML=event.target.title;
-
+	}
+	document.getElementById("workp").innerHTML=event.target.title;
+	
+	document.querySelector(".workgal").style.display="inline-block";
     document.getElementById("worki1").style.display="inline";
     document.getElementById("worki2").style.display="inline";
     document.getElementById("worki3").style.display="inline";
@@ -64,5 +87,8 @@ function newwork(event){
     document.getElementById("worki5").src="work/"+workn+".4.jpg";
     document.getElementById("worki6").src="work/"+workn+".5.jpg";
 
+}
 
+function scrollto(){
+		document.getElementById("scrollpoint").scrollIntoView();
 }
