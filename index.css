@@ -157,8 +157,7 @@ img[src=""]{
 	right:0;
 	top:65vh;
 	background-color:white;
-	padding-top:20vh;
-	padding-bottom:20vh;
+	padding-bottom:2vh;
 }
 
 #prodbody{
@@ -169,7 +168,7 @@ img[src=""]{
 	top:65vh;
 	background-color:black;
 	padding-top:20vh;
-	padding-bottom:20vh;
+	padding-bottom:2vh;
 }
 
 .logox{
@@ -347,8 +346,8 @@ img[src=""]{
 }
 
 .galthumb{
-    max-height: 15vh;
-    max-width: 12vw;
+    max-height: 11vh;
+
     margin:1vmin;
 }
 
@@ -397,6 +396,7 @@ img[src=""]{
     text-align: center;
     max-width: 80vw;
     margin-left:10vw;
+	font-size:1.5vmin;
 }
 
 .carlabel{
@@ -423,6 +423,11 @@ img[src=""]{
 	height:auto;
 }
 
+	.footer{
+		font-size:1.2vmax;
+		font-weight:100;
+		margin-top:1vh;
+	}
 
     .car{
         padding-top:2vmin;
@@ -593,8 +598,8 @@ img[src=""]{
     }
 
     .galthumb{
-        max-height: 12vh;
-        max-width: 20vw;
+        max-height: 6vh;
+ 
     }
 
     
@@ -668,13 +673,13 @@ color:black}
 }
 
 #ocbody{
-	top:-23vh;
+	top:-25vh;
 	z-index:0;
 }
 
 #prodbody{
 	z-index:0;
-	top:-23vh;
+	top:-25vh;
 }
 
 .gallery{
