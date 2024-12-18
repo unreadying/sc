@@ -6,6 +6,7 @@ var page = document.getElementById("content");
 var menu = false;
 
 menubutton.onclick=menutog;
+menubutton.setAttribute('aria-expanded',menu);
 x.onclick=menutog;
 
 function menutog(){
@@ -14,12 +15,11 @@ function menutog(){
         min.style.visibility="hidden";
         max.style.display="block";
         page.style.opacity="0";
-        menu=!menu;
     }else{
         min.style.visibility="visible";
-        min.style.display="block";
         max.style.display="none";
         page.style.opacity="1";
-        menu=!menu;
     }
+	menu=!menu;
+	menubutton.setAttribute('aria-expanded',menu);
 }
